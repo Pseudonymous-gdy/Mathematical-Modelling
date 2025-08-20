@@ -1,0 +1,64 @@
+\documentclass[fontset=none]{ctexart}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{calc}
+\usepackage[margin=2.5cm, headsep=1cm, headheight=87pt]{geometry}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usetikzlibrary{positioning}
+\title{x}
+\author{Daoyuan GUO}
+\date{August 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\begin{table}[htbp]
+    \centering
+    \caption{符号说明}
+    \label{tab:symbols}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{l p{0.5\textwidth} l l p{0.5\textwidth} l}
+    \toprule
+    \textbf{符号} & \textbf{含义} & \textbf{单位} & \textbf{符号} & \textbf{含义} & \textbf{单位} \\
+    \midrule
+
+    $P_{n,k}$ & 基站 $n$ 到用户$k$ 的发射功率 & $dBm$&
+    $\phi_{n,k}$ & 用户$k$ 与基站 $n$ 之间由路径损耗造成的的大规模衰减 & $dB$ \\
+    $h_{n,k}$ & 用户$k$ 与基站 $n$ 之间由信号在空间中多径效应造成的小规模瑞丽衰减 & &
+    $N_0$ & 白噪声 & \\
+    $i$ & 用户持有的资源块数量 &  &
+    $b$ & 单个资源块的带宽 &  \\
+    $\gamma $ & 用户的信噪比 & &
+    $P_{rx}$ & 接收信号功率 & $mW$ \\
+    $r$ & 用户的传输速率 &  &
+    $y^{URLLC}$ &  URLLC 用户任务的服务质量 &  \\
+    $y^{eMBB}$ &  eMBB 用户任务的服务质量 &  &
+    $y^{mMTC}$ &  mMTC 用户任务的服务质量 &  \\
+    $\alpha$ & URLLC 用户任务效用折扣系数 &  &
+    $L_{SLA}$ & URLLC,eMBB,mMTC的延迟服务水平协议 & $ms$ \\
+    $r_{SLA}$ & eMBB 切片的传输速率服务水平协议  & $Mbps$ &
+    $M^{URLLC}$ &  URLLC 用户任务的惩罚系数 & \\
+    $M^{eMBB}$ & eMBB 用户任务的惩罚系数 & &
+    $M^{mMTC}$ & mMTC 用户任务的惩罚系数 &  \\
+    $P_{static}$ & 固定能耗 & $W$ &
+    $P_{RB}$ & 每个启动的资源块产生的额外功耗 & $W$ \\
+    $\delta $ & 激活能耗系数 &  &
+    $N_{active}$ & 资源块启动数量 & \\
+    $P_{tx}$ & 因功率放大器会对信号强度造成一定的损耗的发射功率 & $W$ \\
+    $\eta $ & 损耗系数 & &
+    $P_{transmit}$ & 发射功率 & $W$ \\
+    $P$ & 总能耗 & $W$ & & &\\\bottomrule
+    \end{tabular}}
+\end{table}
+
+
+\end{document}
