@@ -69,11 +69,10 @@ This is standard in multinomial logit / gravity estimation where one category is
 
 ### 5. Elasticity term $\dfrac{\partial \text{Weight}_i}{\partial \text{Price}_i}$
 
-The term $\dfrac{\partial \text{Weight}_i}{\partial \text{Price}_i}$, used in logarithmic form, represents the **elasticity** of import demand:
+The term $\dfrac{\partial \text{Weight}_i}{\partial \text{Price}_i}$, represents the **elasticity** of import demand:
 
 $$
-\varepsilon_{i,t}
-= \frac{\partial \ln \text{Weight}_{i,t}}{\partial \ln \text{Price}_{i,t}},
+\varepsilon_{i,t} = \dfrac{\partial \text{Weight}_i}{\partial \text{Price}_i},
 $$
 
 which measures how sensitive China’s imported quantity from country $i$ is to changes in that country’s export price.  
@@ -152,11 +151,10 @@ $$
 
 ### 5. 弹性项 $\dfrac{\partial \text{Weight}_i}{\partial \text{Price}_i}$ 的含义
 
-$\dfrac{\partial \text{Weight}_i}{\partial \text{Price}_i}$ 在对数意义下代表进口需求弹性：
+$\dfrac{\partial \text{Weight}_i}{\partial \text{Price}_i}$代表进口需求弹性：
 
 $$
-\varepsilon_{i,t}
-= \frac{\partial \ln \text{Weight}_{i,t}}{\partial \ln \text{Price}_{i,t}},
+\varepsilon_{i,t} = \dfrac{\partial \text{Weight}_i}{\partial \text{Price}_i},
 $$
 
 用于衡量“中国自国家 $i$ 的进口量”对“该国出口价格”变化的敏感程度。  
