@@ -130,7 +130,6 @@ if share_df.shape[0] < 3:
 else:
     X = share_df[['ln_prod_share',
                   'ln_tariff_us_cn',
-                  'ln_tariff_cn_us',
                   'elasticity']].copy()
     # 国家虚拟变量
     dummies = pd.get_dummies(share_df['country'], drop_first=True)
@@ -201,8 +200,8 @@ if share_model is not None:
         # 只对 Brazil & Argentina 构造回归自变量
         df_25_sub = df_25[df_25['country'].isin(['Brazil', 'Argentina'])].copy()
         df_25_sub['ln_prod_share'] = np.log(df_25_sub['prod_share'])
-        df_25_sub['ln_tariff_us_cn'] = np.log1p(df_25_sub['tariff us-cn'] / 100.0)
-        df_25_sub['ln_tariff_cn_us'] = np.log1p(df_25_sub['tariff cn-us'] / 100.0)
+        df_25_sub['ln_tariff_us_cn'] = np.log1p(df_25_sub['tariff us-cn'])
+        df_25_sub['ln_tariff_cn_us'] = np.log1p(df_25_sub['tariff cn-us'])
 
         df_25_sub = df_25_sub.replace([np.inf, -np.inf], np.nan)
         df_25_sub = df_25_sub.dropna(subset=[
@@ -281,11 +280,11 @@ for c in ['USA', 'Brazil', 'Argentina']:
     if sub.shape[0] >= 4:
         logP = np.log(sub['price'].values)
         try:
-            ar_price = AutoReg(logP, lags=3, old_names=False).fit()
+            ar_price = AutoReg(logP, lags=2, old_names=False).fit()
             price_models[c] = ar_price
             logP_25 = ar_price.forecast(steps=1)[0]
             price_hat_25[c] = float(np.exp(logP_25))
-            print(f"\n{c} 价格 AR(3) 预测 2025: {price_hat_25[c]:.4f}")
+            print(f"\n{c} 价格 AR(2) 预测 2025: {price_hat_25[c]:.4f}")
         except Exception as e:
             # 回退到最后一次简单增长率预测
             if sub.shape[0] >= 2:
