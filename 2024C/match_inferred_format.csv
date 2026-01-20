@@ -1,0 +1,32 @@
+match_id,player1,player2,max_set_no,winner_max_sets,inferred_format,notes,pair
+2023-wimbledon-1301,Carlos Alcaraz,Nicolas Jarry,4,2,best-of-3,,Carlos Alcaraz vs Nicolas Jarry
+2023-wimbledon-1302,Alexander Zverev,Matteo Berrettini,3,2,best-of-3,,Alexander Zverev vs Matteo Berrettini
+2023-wimbledon-1303,Frances Tiafoe,Grigor Dimitrov,3,2,best-of-3,,Frances Tiafoe vs Grigor Dimitrov
+2023-wimbledon-1304,Alejandro Davidovich Fokina,Holger Rune,5,2,best-of-3,observed set_no>=5 but no winner reached 3 sets,Alejandro Davidovich Fokina vs Holger Rune
+2023-wimbledon-1305,Daniil Medvedev,Marton Fucsovics,4,2,best-of-3,,Daniil Medvedev vs Marton Fucsovics
+2023-wimbledon-1306,Jiri Lehecka,Tommy Paul,5,2,best-of-3,observed set_no>=5 but no winner reached 3 sets,Jiri Lehecka vs Tommy Paul
+2023-wimbledon-1307,Christopher Eubanks,Christopher O'Connell,3,2,best-of-3,,Christopher Eubanks vs Christopher O'Connell
+2023-wimbledon-1308,Laslo Djere,Stefanos Tsitsipas,3,2,best-of-3,,Laslo Djere vs Stefanos Tsitsipas
+2023-wimbledon-1309,Jannik Sinner,Quentin Halys,4,2,best-of-3,,Jannik Sinner vs Quentin Halys
+2023-wimbledon-1310,Daniel Elahi Galan,Mikael Ymer,5,2,best-of-3,observed set_no>=5 but no winner reached 3 sets,Daniel Elahi Galan vs Mikael Ymer
+2023-wimbledon-1311,Guido Pella,Roman Safiullin,3,2,best-of-3,,Guido Pella vs Roman Safiullin
+2023-wimbledon-1312,Denis Shapovalov,Liam Broady,4,2,best-of-3,,Denis Shapovalov vs Liam Broady
+2023-wimbledon-1313,Andrey Rublev,David Goffin,4,2,best-of-3,,Andrey Rublev vs David Goffin
+2023-wimbledon-1314,Alexander Bublik,Maximilian Marterer,3,2,best-of-3,,Alexander Bublik vs Maximilian Marterer
+2023-wimbledon-1315,Lorenzo Musetti,Hubert Hurkacz,3,2,best-of-3,,Hubert Hurkacz vs Lorenzo Musetti
+2023-wimbledon-1316,Stan Wawrinka,Novak Djokovic,3,2,best-of-3,,Novak Djokovic vs Stan Wawrinka
+2023-wimbledon-1401,Carlos Alcaraz,Matteo Berrettini,4,2,best-of-3,,Carlos Alcaraz vs Matteo Berrettini
+2023-wimbledon-1402,Grigor Dimitrov,Holger Rune,4,2,best-of-3,,Grigor Dimitrov vs Holger Rune
+2023-wimbledon-1403,Daniil Medvedev,Jiri Lehecka,2,1,best-of-3 (observed set_no<=3),,Daniil Medvedev vs Jiri Lehecka
+2023-wimbledon-1404,Christopher Eubanks,Stefanos Tsitsipas,5,2,best-of-3,observed set_no>=5 but no winner reached 3 sets,Christopher Eubanks vs Stefanos Tsitsipas
+2023-wimbledon-1405,Jannik Sinner,Daniel Elahi Galan,3,2,best-of-3,,Daniel Elahi Galan vs Jannik Sinner
+2023-wimbledon-1406,Roman Safiullin,Denis Shapovalov,4,2,best-of-3,,Denis Shapovalov vs Roman Safiullin
+2023-wimbledon-1407,Andrey Rublev,Alexander Bublik,5,2,best-of-3,observed set_no>=5 but no winner reached 3 sets,Alexander Bublik vs Andrey Rublev
+2023-wimbledon-1408,Hubert Hurkacz,Novak Djokovic,4,2,best-of-3,,Hubert Hurkacz vs Novak Djokovic
+2023-wimbledon-1501,Carlos Alcaraz,Holger Rune,3,2,best-of-3,,Carlos Alcaraz vs Holger Rune
+2023-wimbledon-1502,Daniil Medvedev,Christopher Eubanks,5,2,best-of-3,observed set_no>=5 but no winner reached 3 sets,Christopher Eubanks vs Daniil Medvedev
+2023-wimbledon-1503,Jannik Sinner,Roman Safiullin,4,2,best-of-3,,Jannik Sinner vs Roman Safiullin
+2023-wimbledon-1504,Andrey Rublev,Novak Djokovic,4,2,best-of-3,,Andrey Rublev vs Novak Djokovic
+2023-wimbledon-1601,Carlos Alcaraz,Daniil Medvedev,3,2,best-of-3,,Carlos Alcaraz vs Daniil Medvedev
+2023-wimbledon-1602,Jannik Sinner,Novak Djokovic,3,2,best-of-3,,Jannik Sinner vs Novak Djokovic
+2023-wimbledon-1701,Carlos Alcaraz,Novak Djokovic,5,2,best-of-3,observed set_no>=5 but no winner reached 3 sets,Carlos Alcaraz vs Novak Djokovic

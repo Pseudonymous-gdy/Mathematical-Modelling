@@ -1,0 +1,1 @@
+{"match": "2023-wimbledon-1701", "T": 333, "alpha_mean": 0.007910277076670386, "alpha_ci": [-0.931381053924777, 0.8840200371987335], "advi_iters": 2000, "nuts_draws": null}
