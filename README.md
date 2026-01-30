@@ -23,23 +23,23 @@ Website links:
 
 ### 2.1 索引
 
-* 赛季 (s\in{1,\dots,34})
-* 周 (t\in{1,\dots,T_s})
-* 选手（情侣） (i\in \mathcal A_{s,t})（当周仍在赛的集合）
+* 赛季 $(s\in{1,\dots,34})$
+* 周 $(t\in{1,\dots,T_s})$
+* 选手（情侣） $(i\in \mathcal A_{s,t})$（当周仍在赛的集合）
 
 ### 2.2 观测量（由 CSV 直接计算）
 
 1. **评委分**
    从 `weekX_judgeY_score` 取分（忽略 `N/A`），当周总分
-   [
+   $[
    J_{i,t}=\sum_{j\in \text{available judges}} \text{score}_{i,t,j}.
-   ]
+   ]$
    题面说明：`0` 表示已淘汰后的占位分；`N/A` 代表该周/该评委不存在。
 
 2. **当周评委百分比**（用于 percent 制度）
-   [
+   $[
    P^J_{i,t}=\frac{J_{i,t}}{\sum_{k\in\mathcal A_{s,t}} J_{k,t}}.
-   ]
+   ]$
    题面 Appendix 对 percent 的计算就是这么定义的。
 
 3. **当周评委名次**（用于 rank 制度）
@@ -71,14 +71,14 @@ p_{i,t}=\frac{F_{i,t}}{V_t},\quad \sum_{i\in\mathcal A_{s,t}}p_{i,t}=1,
 ### 3.1 人气 → vote share 的生成层（解决“不唯一”并给不确定性）
 
 引入潜在人气状态 (z_{i,t})（越大越受欢迎）：
-[
+$[
 z_{i,1}\sim \mathcal N(\mu_i,\sigma_0^2),\qquad
 z_{i,t}=z_{i,t-1}+\epsilon_{i,t},\ \epsilon_{i,t}\sim \mathcal N(0,\sigma_z^2).
-]
+]$
 用 softmax 把人气变成当周 vote share：
-[
+$[
 p_{i,t}=\frac{\exp(z_{i,t})}{\sum_{k\in\mathcal A_{s,t}}\exp(z_{k,t})}.
-]
+]$
 直观含义：票数随周变化但有“惯性”，这正是把“多解”收束成“可解释的一族解”，同时后验方差/区间自然就是题目要的 certainty measure。
 
 ### 3.2 规则层：由 (J_{i,t}) 与 (p_{i,t}) 计算“当周风险分”
@@ -86,16 +86,16 @@ p_{i,t}=\frac{\exp(z_{i,t})}{\sum_{k\in\mathcal A_{s,t}}\exp(z_{k,t})}.
 按题设两种合成方式分别定义“淘汰风险分” (S_{i,t})：
 
 **(A) Percent 制度（season 3–27a）**
-[
+$[
 S_{i,t}=P^J_{i,t}+p_{i,t}.
-]
+]$
 分数越小越危险（示例就是“百分比相加决定淘汰”）。
 
 **(B) Rank 制度（season 1,2,28a–34）**
 先对 (p_{i,t}) 排名得 (R^F_{i,t})，再
-[
+$[
 S_{i,t}=R^J_{i,t}+R^F_{i,t}.
-]
+]$
 这里**rank 越大越差**，所以 (S_{i,t}) 越大越危险；题面示例中被淘汰者确实对应更大的“名次和”。
 
 **(C) Season 28 起 bottom-2 + 评委救人（题面允许假设从 28 开始）**
