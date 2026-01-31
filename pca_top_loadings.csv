@@ -1,0 +1,101 @@
+component,side,rank,feature,loading
+PC1,pos,1,country_United States,0.4431664693640377
+PC1,pos,2,industry_Athlete,0.30759520324608597
+PC1,pos,3,notab_tag_Athlete,0.3039397250625289
+PC1,pos,4,notab_tag_Olympic,0.23348768141396092
+PC1,pos,5,state_Iowa,0.08537821050369845
+PC1,pos,6,state_Washington,0.08322359397648289
+PC1,pos,7,state_Massachusetts,0.07721450725907739
+PC1,pos,8,state_Florida,0.06999306684867834
+PC1,pos,9,state_West Virginia,0.05812280950836659
+PC1,pos,10,state_Kansas,0.05779361268676683
+PC1,neg,1,state_Unknown,-0.44316646936403764
+PC1,neg,2,country_England,-0.19383888933711316
+PC1,neg,3,notab_tag_Actor,-0.172596263099076
+PC1,neg,4,country_Canada,-0.16848463657691132
+PC1,neg,5,industry_Model,-0.162227492992946
+PC1,neg,6,notab_tag_Model,-0.1416709234482207
+PC1,neg,7,country_Australia,-0.11619980746191558
+PC1,neg,8,industry_Actor/Actress,-0.10400351105832831
+PC1,neg,9,industry_TV Personality,-0.10156652769080948
+PC1,neg,10,country_Czechoslovakia,-0.0977105528364226
+PC2,pos,1,industry_Athlete,0.3698557481736565
+PC2,pos,2,notab_tag_Athlete,0.3340216058834111
+PC2,pos,3,state_Unknown,0.2754761860085234
+PC2,pos,4,notab_tag_Olympic,0.25262683988149015
+PC2,pos,5,country_Russia,0.1369562033151791
+PC2,pos,6,notab_tag_Other,0.13478445200549785
+PC2,pos,7,country_Canada,0.1237630566187912
+PC2,pos,8,industry_Racing Driver,0.11933684603449048
+PC2,pos,9,country_Brazil,0.10426055091388016
+PC2,pos,10,country_Czechoslovakia,0.09419495312798834
+PC2,neg,1,notab_tag_Actor,-0.3319997981725197
+PC2,neg,2,industry_Actor/Actress,-0.30118452129509904
+PC2,neg,3,country_United States,-0.2754761860085235
+PC2,neg,4,notab_tag_Singer,-0.2145065040096257
+PC2,neg,5,industry_Singer/Rapper,-0.1636655984189324
+PC2,neg,6,state_New York,-0.12422887028012296
+PC2,neg,7,notab_tag_Disney,-0.10090185238693833
+PC2,neg,8,state_California,-0.10005389646901443
+PC2,neg,9,state_Missouri,-0.06646890120650172
+PC2,neg,10,state_Hawaii,-0.05238095219662963
+PC3,pos,1,industry_Singer/Rapper,0.39568829492681135
+PC3,pos,2,notab_tag_Singer,0.3505207617220387
+PC3,pos,3,notab_tag_Judge,0.29399077087527775
+PC3,pos,4,industry_Entrepreneur,0.2732521437783373
+PC3,pos,5,country_Croatia,0.2539755340705791
+PC3,pos,6,notab_tag_Other,0.16887162899213787
+PC3,pos,7,state_Delaware,0.11085793512777521
+PC3,pos,8,state_Kentucky,0.09886154053794872
+PC3,pos,9,state_New Jersey,0.09817392784402439
+PC3,pos,10,state_Maryland,0.08738023773145742
+PC3,neg,1,notab_tag_Actor,-0.269398632370964
+PC3,neg,2,industry_Actor/Actress,-0.2659259442081463
+PC3,neg,3,notab_tag_Model,-0.24670761446971595
+PC3,neg,4,industry_Model,-0.20331647423563284
+PC3,neg,5,notab_tag_Athlete,-0.11849444461996642
+PC3,neg,6,notab_tag_Olympic,-0.11726208332595398
+PC3,neg,7,industry_Athlete,-0.09500942949811214
+PC3,neg,8,state_Rhode Island,-0.08687955898125158
+PC3,neg,9,country_Poland,-0.08483445513070771
+PC3,neg,10,notab_tag_Host,-0.07595432804343066
+PC4,pos,1,notab_tag_Judge,0.48722251552375395
+PC4,pos,2,industry_Entrepreneur,0.44924009398974013
+PC4,pos,3,country_Croatia,0.41757166448345756
+PC4,pos,4,industry_Actor/Actress,0.1751355417959801
+PC4,pos,5,state_New Jersey,0.16453280537551437
+PC4,pos,6,notab_tag_Actor,0.10451982687153732
+PC4,pos,7,state_California,0.10428826724365221
+PC4,pos,8,country_United States,0.07464670663938466
+PC4,pos,9,notab_tag_Host,0.07250880484269837
+PC4,pos,10,state_New York,0.06515046951719776
+PC4,neg,1,industry_Singer/Rapper,-0.31640485536150403
+PC4,neg,2,notab_tag_Singer,-0.3038632773002799
+PC4,neg,3,state_Delaware,-0.08806927425261213
+PC4,neg,4,state_Maryland,-0.07984940402660504
+PC4,neg,5,state_Kentucky,-0.07946325714973611
+PC4,neg,6,country_Wales,-0.07830647316621418
+PC4,neg,7,state_Unknown,-0.0746467066393846
+PC4,neg,8,country_Australia,-0.07252961541994092
+PC4,neg,9,country_England,-0.07208730811046402
+PC4,neg,10,industry_Racing Driver,-0.06711189735756035
+PC5,pos,1,industry_TV Personality,0.38307446999300704
+PC5,pos,2,notab_tag_Other,0.36623094602610673
+PC5,pos,3,notab_tag_Reality,0.19702311261859234
+PC5,pos,4,notab_tag_Host,0.17282820361300494
+PC5,pos,5,notab_tag_Journalist,0.1537825220210946
+PC5,pos,6,industry_Social Media Personality,0.12697347743088483
+PC5,pos,7,state_Texas,0.11791343555899789
+PC5,pos,8,industry_Sports Broadcaster,0.1178781304670399
+PC5,pos,9,state_Alaska,0.11662324430072707
+PC5,pos,10,state_California,0.10300825111993844
+PC5,neg,1,notab_tag_Singer,-0.27325025861442453
+PC5,neg,2,industry_Singer/Rapper,-0.22440489428794386
+PC5,neg,3,notab_tag_Athlete,-0.1863116872929485
+PC5,neg,4,notab_tag_Olympic,-0.16611886457242428
+PC5,neg,5,notab_tag_Judge,-0.1591811654998223
+PC5,neg,6,country_Croatia,-0.15307139034511863
+PC5,neg,7,notab_tag_Actor,-0.15150775983783768
+PC5,neg,8,industry_Actor/Actress,-0.13603650232823675
+PC5,neg,9,notab_tag_Model,-0.12524720905443829
+PC5,neg,10,industry_Athlete,-0.12284046003816816
